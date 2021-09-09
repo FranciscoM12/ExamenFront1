@@ -23,7 +23,7 @@ class Main extends Component {
   const value = e.target.value;
   this.setState({actual: data.find(element => element.id === (this.state.contador +1) + value),contador: this.state.contador +1,
   seleccionPrevia:value.toUpperCase()}) 
-  historial.push(value.toUpperCase())
+  historial.unshift(value.toUpperCase())
    }
   
 }

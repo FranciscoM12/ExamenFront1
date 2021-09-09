@@ -6,7 +6,7 @@ class Recordatorio extends Component {
       <div className="recordatorio">
         <h3>Selección anterior: {this.props.seleccionPrevia}</h3>
         <h4>Historial de opciones elegidas: </h4>
-        <ul>{this.props.historial.slice([1], [this.props.historial.length])}</ul>
+        <ul>{this.props.historial.slice(1)}</ul>
       </div>
     );
   }
